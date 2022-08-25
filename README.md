@@ -10,3 +10,5 @@ https://stackoverflow.com/questions/53351821/how-to-deploy-react-app-create-reac
 
 Heroku is disabling its free plan, which is really unfortunate. I am now looking
 at the various free options on other platforms.
+
+The running app lives here: testapp123.b4a.app
