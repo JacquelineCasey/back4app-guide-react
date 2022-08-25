@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import IncrementButton from './components/IncrementButton';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <p>
           Second change to app!
         </p>
+        <IncrementButton></IncrementButton>
         <a
           className="App-link"
           href="https://reactjs.org"
