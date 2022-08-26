@@ -36,7 +36,7 @@ function App() {
   if (!clamped_speed)
     clamped_speed = 0;
 
-  const [r, g, b] = calculateColor(clamped_speed/speed_target);
+  const [r, g, b] = calculateColor(clamped_speed/speed_target * Math.min(seconds, 2) / 2);
 
   return (
     <div className="App" style={{
