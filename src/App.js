@@ -44,11 +44,13 @@ function App() {
     }}>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <IncrementButton count={clicks} updateCount={ (c) => {
-          setStarted(true);
-          updateClicks(c);
-        } 
-        }/>
+        <div className="disable-select">
+          <IncrementButton count={clicks} updateCount={ (c) => {
+            setStarted(true);
+            updateClicks(c);
+          } 
+          }/>
+        </div>
         <Timer time={time} updateTime={updateTime} active={started} startTime={startTime}/>
         {(clicks && time) 
           ? <label>Speed: {Math.round(clicks / seconds * 100) / 100} clicks per second</label> 
