@@ -1,12 +1,8 @@
-import { useState } from "react";
 
-
-function IncrementButton() {
-    const [val, update_val] = useState(0);
-
+function IncrementButton({count, updateCount}) {
     return (
-        <button onClick={() => update_val(val + 1)}>
-            Click me: {val}
+        <button onClick={() => updateCount(count + 1)}>
+            Click me: {count}
         </button>
     );
 }
